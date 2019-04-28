@@ -45,4 +45,45 @@
 
 
 /*** Aula 07 - Funções ***/ 
-    
+    /*function soma(a, b) {
+        console.log(a+b);
+    }
+    soma(2, 2);
+
+    function subtracao(a, b) {
+        return a-b;
+    }
+    var s = subtração 5-3;
+    console.log(s); 
+
+    function multiplicacao(a, b) {
+        return a*b;
+    }
+    console.log(multiplicacao(5,5)); */
+
+
+/*** Aula 08 - Eventos ***/ 
+    // -> button em html cria um botão
+    // -> button onclick executa uma ação se você clica no botão
+
+    /*function mensagem() {
+        alert("Ei, não clique em mim");
+    } */
+
+/*** Aula 09 - Document Object Model ***/ 
+    /*function mudaCor(cor){
+        var elemento = document.getElementById("mensagem");
+        elemento.style.color = cor;
+    } */
+    //muda a cor da letra na pagina
+
+
+/*** Aula 10 - Validação de formulário ***/ 
+    function valida() {
+        var nome = document.getElementById('nome');
+        if (nome.value == "") {
+            alert("Campo nome não pode estar em branco");
+        } else {
+            alert("Nenhum problema foi detectado. Seu formulário pode ser enviado com sucesso");
+        }
+    }
