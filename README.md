@@ -1,4 +1,4 @@
-# JS
+# Cursos desenvolvimento web
 Repositório de estudos de JavaScript HTML5 e CSS3
 
 Esse repositório abrange alguns cursos feitos
