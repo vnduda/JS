@@ -45,3 +45,28 @@ figure.foto-legenda figcaption {
 figure.foto-legenda:hover figcaption {
         opacity: 1;
 }
+
+/* Formatação do menu */
+
+/* Navegador flutuando na parte superior da tela */
+nav#menu {
+        display: block;
+}
+nav#menu ul {
+        list-style: none; /* some com os marcadores da lista */
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        left: 300px;
+}
+
+nav#menu li {
+        display: inline-block; /* a barra de navegação fica horizontal */
+        background-color: #dddddd;
+        padding: 10px;
+        margin: 2px;
+}
+
+nav#menu h1 {
+        display: none;
+}
