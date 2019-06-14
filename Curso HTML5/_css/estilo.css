@@ -2,7 +2,7 @@
 
 body {
         /* background-image: url(" imagem jpeg de um fundo) */
-        background-color: white;
+        background-color: #dddddd;
         color: rgba(0,0,0,1);
 }
 /*  text-align: justify cria um ajuste desde o início
@@ -10,9 +10,32 @@ body {
         text-indent cria um espaçamento no início, dando ideia de
         parágrafo
 */
+
+div#interface {
+        width: 900px;
+        background-color: white;
+        /* margem: cima direita baixo esquerda */
+        margin: -20px auto 0px auto;
+        /* deslocamento lateral, deslocamento vertical, espalhamento da sombra e cor */
+        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+         /* padding: cima direita baixo esquerda 
+        para valores iguais basta informar uma vez */
+        padding: 10px 10px 10px 10px;
+}
+
 p { 
     text-align: justify;
     text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+        position: absolute;
+        left: 750px;
+        top: 40px;
+}
+
+header#cabecalho {
+
 }
 
 /* Formatação de imagens com legendas */
