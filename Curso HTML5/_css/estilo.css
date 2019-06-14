@@ -65,8 +65,24 @@ nav#menu li {
         background-color: #dddddd;
         padding: 10px;
         margin: 2px;
+        transition: background-color 1s;
+}
+
+nav#menu li:hover {
+        background-color: #606060
 }
 
 nav#menu h1 {
         display: none;
+}
+
+/* Deixa o menu com cor preta e sem sublinhado */
+nav#menu a {
+        color: #000000;
+        text-decoration: none;
+}
+
+/* Muda a cor para branco da letra quando o mouse está por cim */
+nav#menu a:hover {
+        color: white;
 }
