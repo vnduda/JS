@@ -159,6 +159,35 @@ table#tabelaspec td {
         text-align: center; 
 }
 
+/* configuração da tabela (coluna esquerda) */
+table#tabelaspec td.ce {
+        color: white;
+        background-color: #606060;
+        vertical-align: top;
+        font-weight: bold;
+}
+
+/* configuração da tabela (coluna direita) */
+table#tabelaspec td.cd {
+        background-color: #cecece;
+}
+
+/* Configuração legenda da tabela */
+table#tabelaspec caption {
+        color: #888888;
+        font-size: 13pt;
+        font-weight: bolder;
+}
+
+/* configuração data da legenda da tabela */
+table#tabelaspec caption span {
+        display: block;
+        float: right;
+        color: black;
+        font-size: 8pt;
+        margin-top: 10px;
+}
+
 aside#lateral {
         display: block;
         width: 350px;
