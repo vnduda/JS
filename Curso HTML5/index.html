@@ -5,6 +5,7 @@
     <title>Tudo sobre Google Home</title>
     <link rel="stylesheet" href="_css/estilo.css"/> 
 </head>
+<script src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
     <header id="cabecalho"> <!-- Delimitação do cabeçalho -->
@@ -16,18 +17,19 @@
     <!-- A melhor forma de de diminuir uma imagem é pelo editor de imagem (ex: photoshop)
          e não diminuir ela simplesmente no html (pois ela não diminui a quantidade de tamanho)
          assim o site fica mais leve -->
-    <img id="icone" src="imagens/imagem-duda (5).png"/>
+    <img id="icone" src="imagens/google-home-pequeno.png"/>
 
 <!-- Aqui é criado uma tag de navegação -->
 <nav id="menu">
     <h1>Menu Principal</h1>
     <!-- Aqui é usado uma tag de criação de lista -->
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="specs.html">Especificações</a></li>
-        <li><a href="fotos.html">Fotos</a></li>
-        <li><a href="multimidia.html">Multimídia</a></li>
-        <li><a href="fale-conosco.html">Fale conosco</a></li>
+        <!--TODO ajeitar fotos de cada icone -->
+        <li onmouseover="mudaFoto('imagens/google-home-pequeno.png')" onmouseout="mudaFoto('imagens/google-home-pequeno.png')"><a href="index.html">Home</a></li>
+        <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/google-home-pequeno.png')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/google-home-pequeno.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/google-home-pequeno.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/google-home-pequeno.png')"><a href="fale-conosco.html">Fale conosco</a></li>
     </ul>
 </nav>
 
