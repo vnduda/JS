@@ -5,8 +5,16 @@
     <title>Tudo sobre Google Home</title>
     <link rel="stylesheet" href="_css/estilo.css"/> 
     <link rel="stylesheet" href="_css/form.css"/>
+    <script src="_javascript/funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            total = qtd * 1500;
+            document.getElementById('cTot').value = total;
+        }
+    </script>
 </head>
-<script src="_javascript/funcoes.js"></script>
+
 <body>
 <div id="interface">
     <header id="cabecalho"> <!-- Delimitação do cabeçalho -->
@@ -44,7 +52,7 @@
         </hgroup>
     </header>
 
-    <form method="POST" id="fContato" action="email@email.com">
+    <form method="POST" id="fContato" action="email@email.com" oninput="calc_total();">
     <fieldset id="usuario">
         <legend>Identifição do Usuário</legend>
         <!-- maxlenght: comando que limita caracteres de uma caixa de texto-->
@@ -87,13 +95,14 @@
 
     <fieldset id="pedido">
         <legend>Quero um Google Home</legend>
-        Gostaria de adquirir um Google Home quando disponível
-        Cor:
-        Quantidade:
-        Preço total: R$
+        <p><input type="checkbox" name="tPed" id="cPed"/>
+            Gostaria de adquirir um Google Home quando disponível</p>
+        <p>Cor: <input type="color"name="tCor" id="cCor" value="#0000FF"/></p>
+        <p>Quantidade: <input type="number"name="tQtd"id="cQtd" min="0" max="5"/></p>
+        <p>Preço total: R$ <input type="text"name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
     </fieldset>
 
-        BOTAO ENVIAR
+    <input type="image" src="imagens/botao-enviar.png"/>
     </form>
 
 <footer id="rodape">
