@@ -271,3 +271,13 @@ footer#rodape {
 footer#rodape p {
         text-align: center;
 }
+
+iframe#google-homeMedia {
+        display: block;
+        margin-left: 190px;
+}
+
+iframe#google-homeIndex {
+        display: block;
+        margin-left: 5px;
+}
